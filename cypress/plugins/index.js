@@ -27,7 +27,6 @@ const addCucumberPreprocessorPlugin =
 module.exports = async (on, config) => {
   await addCucumberPreprocessorPlugin(on, config) // to allow json to be produced
   // To use esBuild for the bundler when preprocessing
-  require("cypress-localstorage-commands/plugin")(on, config)
   on(
     'file:preprocessor',
     createBundler({

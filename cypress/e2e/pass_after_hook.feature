@@ -1,13 +1,13 @@
 Feature: Cucumber Reporting
 
-    Testing Cucumber reporting
+    Testing Passed & Undefined scenarios
 
     @test
-    Scenario: Readme not displayed
+    Scenario: Code displayed
         When I access cypress-cucumber-preprocessor npm page
-        Then I should see not see the Readme
+        Then I should see Code
 
     @test
     Scenario: Readme displayed
         When I access cypress-cucumber-preprocessor npm page
-        Then I should see the Readme
+        Then I should see Readme

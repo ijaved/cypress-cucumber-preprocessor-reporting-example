@@ -4,10 +4,14 @@ When(/^I access cypress-cucumber-preprocessor npm page$/, () => {
   cy.visit("/")
 })
 
-Then(/^I should see not see the Readme$/, () => {
-  cy.get('#package-tab-test').should('be.visible');
+Then(/^I should see not see Readme$/, () => {
+  cy.get('#package-tab-readme').should('not.be.visible');
 })
 
-Then(/^I should see the Readme$/, () => {
+Then(/^I should see Readme$/, () => {
   cy.get('#package-tab-readme').should('be.visible');
+})
+
+Then(/^I should see Code$/, () => {
+  cy.get('#package-tab-code').should('be.visible');
 })
