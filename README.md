@@ -1,5 +1,12 @@
 # cypress-cucumber-preprocessor-reporting-example
-Example of cucumber reporting not showing correct metrics and attached images to tests
+Examples of cucumber reporting/command line runner not showing correct metrics
 
-To Run: 
-`npm run cy:run`
+Install only dev dependencies: `npm install --dev`
+
+Fail/Pass report: `npx cypress run --spec **/fail_pass.feature --browser chrome` (Working as expected)
+
+Pass/undefined report: `npx cypress run --spec **/pass_undefined.feature --browser chrome`
+
+Fail/Pass/undefined report: `npx cypress run --spec **/fail_pass_undefined.feature --browser chrome`
+
+
