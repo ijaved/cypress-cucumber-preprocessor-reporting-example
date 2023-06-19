@@ -16,3 +16,4 @@ Fail/Pass/undefined report: `npx cypress run --spec **/fail_pass_undefined.featu
 
 Pass/After hook fail report: `npx cypress run --spec **/pass_after_hook.feature --browser chrome` (**Note:** Uncomment lines 1 to 3 before running in cypress/support/hooks.js before running)
 
+Skipped report: `npx cypress run --spec **/skip.feature --browser chrome`
